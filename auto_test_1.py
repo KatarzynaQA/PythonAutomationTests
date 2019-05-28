@@ -4,4 +4,5 @@ driver = webdriver.Chrome(executable_path=r"C:\drivers\chromedriver.exe")
 driver.get("https://autodemo.testoneo.com/en/")
 title = driver.title
 print(title)
+assert 'Lost Hat' == title
 driver.quit()
